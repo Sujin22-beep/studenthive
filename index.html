@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHive | Discover Campus Events</title>
+  <meta name="description" content="Find campus events, join clubs and meet like-minded people with StudentHive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student<strong>Hive</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#" class="active">Home</a>
+        <a href="#events">Events</a>
+        <a href="#clubs">Clubs</a>
+        <a href="register.html">Register</a>
+        <a href="activties.html">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Your Campus, More Opportunities</span>
+          <h1>Discover <span class="text-blue">Campus Events</span></h1>
+          <p class="hero-text">Find events, join clubs, meet like-minded people and make the most of your campus life.</p>
+
+          <div class="hero-buttons">
+            <a href="#events" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Explore Events</a>
+            <a href="#clubs" class="btn btn-outline"><i class="fa-solid fa-user-group"></i> Browse Clubs</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat" data-count="120" data-suffix="+">
+              <i class="fa-regular fa-calendar"></i>
+              <h3>0+</h3>
+              <p>Events</p>
+            </div>
+            <div class="stat" data-count="50" data-suffix="+">
+              <i class="fa-solid fa-user-group"></i>
+              <h3>0+</h3>
+              <p>Clubs</p>
+            </div>
+            <div class="stat" data-count="2000" data-suffix="+">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>0+</h3>
+              <p>Students</p>
+            </div>
+            <div class="stat" data-count="95" data-suffix="%">
+              <i class="fa-solid fa-star"></i>
+              <h3>0%</h3>
+              <p>Satisfaction</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <span class="deco deco-text">Learn<br>Connect<br>Grow</span>
+          <span class="deco deco-spark s1"><i class="fa-solid fa-star"></i></span>
+          <span class="deco deco-spark s2"><i class="fa-solid fa-star"></i></span>
+          <span class="deco deco-spark s3"><i class="fa-solid fa-star"></i></span>
+          <span class="deco deco-blob"></span>
+          <img class="hero-image" src="./img/image1.webp" alt="Students smiling together while working on a laptop on campus" />
+          <div class="sticky-note">Better<br>Students<br>Brighter<br>Tomorrow</div>
+          <div class="join-card">
+            <i class="fa-solid fa-user-group"></i>
+            <div>
+              <strong>Join 2000+</strong>
+              <span>Happy Students</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Explore by Category</h2>
+            <p>Find events that match your interests and passions.</p>
+          </div>
+          <a href="#events" class="view-link">View All Events <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="category-grid">
+          <a href="#" class="category-card" data-category="Tech">
+            <div class="cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="cat-text">
+              <h3>Tech</h3>
+              <p>Hackathons, Workshops, Seminars and more</p>
+            </div>
+            <span class="cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <a href="#" class="category-card" data-category="Cultural">
+            <div class="cat-icon"><i class="fa-solid fa-music"></i></div>
+            <div class="cat-text">
+              <h3>Cultural</h3>
+              <p>Music, Dance, Art, Literature and more</p>
+            </div>
+            <span class="cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <a href="#" class="category-card" data-category="Sports">
+            <div class="cat-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="cat-text">
+              <h3>Sports</h3>
+              <p>Tournaments, Matches, Fitness Events and more</p>
+            </div>
+            <span class="cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <a href="#" class="category-card" data-category="Workshops">
+            <div class="cat-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="cat-text">
+              <h3>Workshops</h3>
+              <p>Skill building, Career Guidance and more</p>
+            </div>
+            <span class="cat-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED EVENTS ===== -->
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Featured Events</h2>
+            <p>Don't miss these exciting events happening on campus.</p>
+          </div>
+          <a href="#" class="view-link">View All Events <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="featured-grid">
+          <article class="event-card">
+            <div class="event-media">
+              <img class="event-img" src="./img/Campus%20Hackathon.webp" alt="Coders working at a hackathon event" />
+              <span class="tag tag-blue">Tech</span>
+              <div class="date-box"><strong>12</strong><span>Nov</span></div>
+            </div>
+            <div class="event-body">
+              <h3>Campus Hackathon 2026</h3>
+              <p class="event-desc">A 24-hour coding challenge to build innovative solutions for real-world problems.</p>
+              <div class="meta">
+                <span><i class="fa-solid fa-location-dot"></i> Main Auditorium</span>
+                <span><i class="fa-regular fa-clock"></i> 5:30 PM</span>
+              </div>
+              <div class="event-footer">
+                <div class="avatars">
+                  <img class="av" src="./img/customer-1-converted.webp" alt="Registered student" />
+                  <img class="av" src="./img/customer-2-converted.webp" alt="Registered student" />
+                  <img class="av" src="./img/customer-3-converted.webp" alt="Registered student" />
+                </div>
+                <small>120+ Registered</small>
+                <button class="btn btn-primary btn-sm details-btn">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-media">
+              <img class="event-img" src="./img/musicnight.webp" alt="Crowd cheering at a music night concert" />
+              <span class="tag tag-yellow">Cultural</span>
+              <div class="date-box"><strong>20</strong><span>Nov</span></div>
+            </div>
+            <div class="event-body">
+              <h3>Music Night</h3>
+              <p class="event-desc">An evening of incredible performances by our talented students.</p>
+              <div class="meta">
+                <span><i class="fa-solid fa-location-dot"></i> Open Air Theatre</span>
+                <span><i class="fa-regular fa-clock"></i> 6:00 PM</span>
+              </div>
+              <div class="event-footer">
+                <div class="avatars">
+                  <img class="av" src="./img/customer-4-converted.webp" alt="Registered student" />
+                  <img class="av" src="./img/customer-5-converted.webp" alt="Registered student" />
+                  <img class="av" src="./img/customer-6-converted.webp" alt="Registered student" />
+                </div>
+                <small>300+ Registered</small>
+                <button class="btn btn-primary btn-sm details-btn">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-media">
+              <img class="event-img" src="./img/sports.webp" alt="Football players competing on the sports ground" />
+              <span class="tag tag-blue">Sports</span>
+              <div class="date-box"><strong>28</strong><span>Nov</span></div>
+            </div>
+            <div class="event-body">
+              <h3>Sports Day</h3>
+              <p class="event-desc">Inter-department competitions in football, cricket, basketball and more.</p>
+              <div class="meta">
+                <span><i class="fa-solid fa-location-dot"></i> Sports Ground</span>
+                <span><i class="fa-regular fa-clock"></i> 8:00 AM</span>
+              </div>
+              <div class="event-footer">
+                <div class="avatars">
+                  <img class="av" src="./img/customer-7.webp" alt="Registered student" />
+                  <img class="av" src="./img/customer-8.webp" alt="Registered student" />
+                  <img class="av" src="./img/customer-9.webp" alt="Registered student" />
+                </div>
+                <small>250+ Registered</small>
+                <button class="btn btn-primary btn-sm details-btn">Details <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== UPCOMING EVENTS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Upcoming Events</h2>
+            <p>More amazing events coming your way!</p>
+          </div>
+          <a href="#" class="view-link">View Calendar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="upcoming-grid">
+          <div class="mini-card">
+            <img class="mini-img" src="./img/webdevelopment-converted.webp" alt="Laptop showing code" />
+            <div class="mini-info">
+              <h4>Web Development Workshop</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Computer Lab</p>
+              <p><i class="fa-regular fa-clock"></i> 10:00 AM</p>
+            </div>
+            <div class="mini-date"><strong>05</strong><span>Dec</span></div>
+          </div>
+          <div class="mini-card">
+            <img class="mini-img" src="./img/dancefest-converted.webp" alt="Dancer performing on stage" />
+            <div class="mini-info">
+              <h4>Dance Fest</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Open Stage</p>
+              <p><i class="fa-regular fa-clock"></i> 5:00 PM</p>
+            </div>
+            <div class="mini-date"><strong>10</strong><span>Dec</span></div>
+          </div>
+          <div class="mini-card">
+            <img class="mini-img" src="./img/camera-converted.webp" alt="Camera held for a photography walk" />
+            <div class="mini-info">
+              <h4>Photography Walk</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Campus Ground</p>
+              <p><i class="fa-regular fa-clock"></i> 7:00 AM</p>
+            </div>
+            <div class="mini-date"><strong>15</strong><span>Dec</span></div>
+          </div>
+          <div class="mini-card">
+            <img class="mini-img" src="./img/career-converted.webp" alt="Speaker presenting at a career seminar" />
+            <div class="mini-info">
+              <h4>Career Guidance Seminar</h4>
+              <p><i class="fa-solid fa-location-dot"></i> Seminar Hall</p>
+              <p><i class="fa-regular fa-clock"></i> 11:00 AM</p>
+            </div>
+            <div class="mini-date"><strong>22</strong><span>Dec</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY JOIN ===== -->
+    <section class="section why" id="clubs">
+      <div class="container why-inner">
+        <div class="why-visual">
+          <img src="./img/collegelife-converted.webp" alt="University campus building surrounded by trees" />
+          <div class="vibrant-text">Vibrant<br>Campus Life</div>
+        </div>
+        <div class="why-content">
+          <h2>Why Join <span class="text-blue">StudentHive</span>?</h2>
+          <div class="reasons">
+            <div class="reason">
+              <div class="reason-icon"><i class="fa-solid fa-user-group"></i></div>
+              <h4>Meet New People</h4>
+              <p>Connect with students across departments.</p>
+            </div>
+            <div class="reason">
+              <div class="reason-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h4>Learn New Skills</h4>
+              <p>Attend workshops and skill sessions.</p>
+            </div>
+            <div class="reason">
+              <div class="reason-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <h4>Grow Your Network</h4>
+              <p>Build connections for your future.</p>
+            </div>
+            <div class="reason">
+              <div class="reason-icon"><i class="fa-solid fa-heart"></i></div>
+              <h4>Be Part of a Community</h4>
+              <p>Join clubs and make lasting memories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2>What Students Say</h2>
+          <div class="slider-controls">
+            <button class="icon-btn round" id="prevBtn" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="icon-btn round" id="nextBtn" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="testimonial-viewport">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <img class="avatar" src="./img/client1-converted.webp" alt="Ananya R." />
+              <div>
+                <p>"StudentHive helped me find amazing events and meet people who share my interests!"</p>
+                <div class="stars">★★★★★</div>
+                <strong>Ananya R.</strong>
+                <small>Computer Science</small>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img class="avatar" src="./img/client2-converted.webp" alt="Karthik M." />
+              <div>
+                <p>"The hackathon was a great experience. Well organized and super fun!"</p>
+                <div class="stars">★★★★★</div>
+                <strong>Karthik M.</strong>
+                <small>Information Technology</small>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <img class="avatar" src="./img/client3-converted.webp" alt="Priya S." />
+              <div>
+                <p>"I joined the music club and found my passion again. StudentHive is awesome!"</p>
+                <div class="stars">★★★★★</div>
+                <strong>Priya S.</strong>
+                <small>Electronics &amp; Communication</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section newsletter-section" id="register">
+      <div class="container">
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <div class="news-text">
+            <i class="fa-solid fa-paper-plane"></i>
+            <div>
+              <h3>Stay Updated</h3>
+              <p>Subscribe to get the latest event updates, club activities and campus news.</p>
+            </div>
+          </div>
+          <div class="news-input">
+            <input type="email" id="emailInput" placeholder="Enter your email address" required />
+            <button type="submit" class="btn btn-white">Subscribe</button>
+          </div>
+          <p class="form-msg" id="formMsg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo light">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student<strong>Hive</strong></span>
+        </a>
+        <p class="tagline">Your gateway to a vibrant campus life.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#clubs">Clubs</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Event Calendar</a></li>
+          <li><a href="#">Club Directory</a></li>
+          <li><a href="#">Help &amp; Support</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> <span>XYZ University,<br>Chennai, India</span></li>
+          <li><i class="fa-regular fa-envelope"></i> <span>studenthive@university.edu</span></li>
+          <li><i class="fa-solid fa-phone"></i> <span>+91 98765 43210</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 StudentHive. All rights reserved.</p>
+        <div class="legal">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Activities | StudentHive</title>
+  <meta name="description" content="Explore technical, cultural, sports, workshop, social service, leadership and arts activities at StudentHive.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (same as home) ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Student<strong>Hive</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#clubs">Clubs</a>
+        <a href="index.html#register">Register</a>
+        <a href="activities.html" class="active" aria-current="page">Activities</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="explore" id="explore">
+
+      <div class="explore__top">
+        <div>
+          <h1>Explore <span class="text-blue">Activities</span></h1>
+          <p>Discover a variety of activities to enhance your skills, interests and campus experience.</p>
+        </div>
+
+        <label class="search-box">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" id="searchInput" placeholder="Search activities, events..." aria-label="Search activities">
+        </label>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter activities">
+        <button class="chip is-active" data-filter="all" aria-pressed="true" style="--c:#0b4fd6">
+          <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i> All Activities
+        </button>
+        <button class="chip" data-filter="technical" aria-pressed="false" style="--c:#2563eb">
+          <i class="fa-solid fa-laptop" aria-hidden="true"></i> Technical
+        </button>
+        <button class="chip" data-filter="cultural" aria-pressed="false" style="--c:#db2777">
+          <i class="fa-solid fa-music" aria-hidden="true"></i> Cultural
+        </button>
+        <button class="chip" data-filter="sports" aria-pressed="false" style="--c:#d97706">
+          <i class="fa-solid fa-trophy" aria-hidden="true"></i> Sports
+        </button>
+        <button class="chip" data-filter="workshops" aria-pressed="false" style="--c:#059669">
+          <i class="fa-solid fa-gear" aria-hidden="true"></i> Workshops
+        </button>
+        <button class="chip" data-filter="social" aria-pressed="false" style="--c:#dc2626">
+          <i class="fa-solid fa-heart" aria-hidden="true"></i> Social Service
+        </button>
+        <button class="chip" data-filter="leadership" aria-pressed="false" style="--c:#4f46e5">
+          <i class="fa-solid fa-user-group" aria-hidden="true"></i> Leadership
+        </button>
+        <button class="chip" data-filter="arts" aria-pressed="false" style="--c:#7c3aed">
+          <i class="fa-solid fa-palette" aria-hidden="true"></i> Arts &amp; Creativity
+        </button>
+      </div>
+
+      <div class="grid" id="activityGrid">
+
+        <!-- ===== DECEMBER ===== -->
+        <article class="card" data-category="technical">
+          <div class="card__media">
+            <img src="./img/Campus Hackathon.webp" alt="Campus Hackathon 2026" loading="lazy">
+            <span class="card__tag">Technical</span>
+            <div class="card__date"><strong>05</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Campus Hackathon 2026</h3>
+            <p>24-hour coding challenge to build innovative solutions.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="cultural">
+          <div class="card__media">
+            <img src="./img/dancefest-converted.webp" alt="Dance Fest" loading="lazy">
+            <span class="card__tag">Cultural</span>
+            <div class="card__date"><strong>10</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Dance Fest</h3>
+            <p>Showcase your talent and passion for dance.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="sports">
+          <div class="card__media">
+            <img src="./img/football-converted.webp" alt="Football Tournament" loading="lazy">
+            <span class="card__tag">Sports</span>
+            <div class="card__date"><strong>12</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Football Tournament</h3>
+            <p>Inter-department football championship.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="workshops">
+          <div class="card__media">
+            <img src="./img/webdevelopment-converted.webp" alt="Web Development Workshop" loading="lazy">
+            <span class="card__tag">Workshops</span>
+            <div class="card__date"><strong>15</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Web Development Workshop</h3>
+            <p>Learn modern web technologies with hands-on practice.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="arts">
+          <div class="card__media">
+            <img src="./img/painting-converted.webp" alt="Painting Competition" loading="lazy">
+            <span class="card__tag">Arts &amp; Creativity</span>
+            <div class="card__date"><strong>18</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Painting Competition</h3>
+            <p>Express your creativity through art.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="social">
+          <div class="card__media">
+            <img src="./img/TreePlantationDrive-converted.webp" alt="Tree Plantation Drive" loading="lazy">
+            <span class="card__tag">Social Service</span>
+            <div class="card__date"><strong>20</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Tree Plantation Drive</h3>
+            <p>Join hands for a greener campus.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="leadership">
+          <div class="card__media">
+            <img src="./img/LeadershipSeminar.webp" alt="Leadership Seminar" loading="lazy">
+            <span class="card__tag">Leadership</span>
+            <div class="card__date"><strong>22</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Leadership Seminar</h3>
+            <p>Develop leadership and communication skills.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="cultural">
+          <div class="card__media">
+            <img src="./img/musicnight.webp" alt="Music Night" loading="lazy">
+            <span class="card__tag">Cultural</span>
+            <div class="card__date"><strong>24</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Music Night</h3>
+            <p>An evening of incredible performances.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="sports">
+          <div class="card__media">
+            <img src="./img/BasketballTournament-converted.webp" alt="Basketball Tournament" loading="lazy">
+            <span class="card__tag">Sports</span>
+            <div class="card__date"><strong>26</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Basketball Tournament</h3>
+            <p>Show your skills on the court.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="technical">
+          <div class="card__media">
+            <img src="./img/RoboticsWorkshop-converted.webp" alt="Robotics Workshop" loading="lazy">
+            <span class="card__tag">Technical</span>
+            <div class="card__date"><strong>28</strong><span>Dec</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Robotics Workshop</h3>
+            <p>Build, learn and innovate with robotics.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <!-- ===== JANUARY ===== -->
+        <article class="card" data-category="workshops">
+          <div class="card__media">
+            <img src="./img/camera-converted.webp" alt="Photography Workshop" loading="lazy">
+            <span class="card__tag">Workshops</span>
+            <div class="card__date"><strong>03</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Photography Workshop</h3>
+            <p>Capture the world through your lens.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="arts">
+          <div class="card__media">
+            <img src="./img/CreativeWritingSession-converted.webp" alt="Creative Writing Session" loading="lazy">
+            <span class="card__tag">Arts &amp; Creativity</span>
+            <div class="card__date"><strong>05</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Creative Writing Session</h3>
+            <p>Explore the power of words.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="social">
+          <div class="card__media">
+            <img src="./img/BloodDonation-converted.webp" alt="Blood Donation Camp" loading="lazy">
+            <span class="card__tag">Social Service</span>
+            <div class="card__date"><strong>07</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Blood Donation Camp</h3>
+            <p>Donate blood, save lives.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="sports">
+          <div class="card__media">
+            <img src="./img/CricketTournament-converted.webp" alt="Cricket Tournament" loading="lazy">
+            <span class="card__tag">Sports</span>
+            <div class="card__date"><strong>09</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Cricket Tournament</h3>
+            <p>Inter-college cricket championship.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="cultural">
+          <div class="card__media">
+            <img src="./img/TheatreDrama-converted.webp" alt="Theatre &amp; Drama" loading="lazy">
+            <span class="card__tag">Cultural</span>
+            <div class="card__date"><strong>11</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Theatre &amp; Drama</h3>
+            <p>Act, create and bring stories to life.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="technical">
+          <div class="card__media">
+            <img src="./img/AIMachineLearning-converted.webp" alt="AI &amp; Machine Learning Workshop" loading="lazy">
+            <span class="card__tag">Technical</span>
+            <div class="card__date"><strong>13</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>AI &amp; Machine Learning Workshop</h3>
+            <p>Explore the world of AI.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="sports">
+          <div class="card__media">
+            <img src="./img/Badminton-converted.webp" alt="Badminton Tournament" loading="lazy">
+            <span class="card__tag">Sports</span>
+            <div class="card__date"><strong>15</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Badminton Tournament</h3>
+            <p>Smash your limits.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="leadership">
+          <div class="card__media">
+            <img src="./img/StudentCouncilMeet-converted.webp" alt="Student Council Meet" loading="lazy">
+            <span class="card__tag">Leadership</span>
+            <div class="card__date"><strong>17</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Student Council Meet</h3>
+            <p>Be a voice for change.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="arts">
+          <div class="card__media">
+            <img src="./img/TheatreDrama-converted.webp" alt="Film Making Workshop" loading="lazy">
+            <span class="card__tag">Arts &amp; Creativity</span>
+            <div class="card__date"><strong>19</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Film Making Workshop</h3>
+            <p>Learn the basics of film making.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="social">
+          <div class="card__media">
+            <img src="./img/EducationOutreach-converted.webp" alt="Education Outreach" loading="lazy">
+            <span class="card__tag">Social Service</span>
+            <div class="card__date"><strong>21</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Education Outreach</h3>
+            <p>Teach, learn and make a difference.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="cultural">
+          <div class="card__media">
+            <img src="./img/FashionShow-converted.webp" alt="Fashion Show" loading="lazy">
+            <span class="card__tag">Cultural</span>
+            <div class="card__date"><strong>23</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Fashion Show</h3>
+            <p>Unleash your style.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="technical">
+          <div class="card__media">
+            <img src="./img/CyberSecurity-converted.webp" alt="Cyber Security Workshop" loading="lazy">
+            <span class="card__tag">Technical</span>
+            <div class="card__date"><strong>25</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Cyber Security Workshop</h3>
+            <p>Learn to stay safe in the digital world.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="sports">
+          <div class="card__media">
+            <img src="./img/TableTennis-converted.webp" alt="Table Tennis Tournament" loading="lazy">
+            <span class="card__tag">Sports</span>
+            <div class="card__date"><strong>27</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Table Tennis Tournament</h3>
+            <p>Serve, play, win.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="workshops">
+          <div class="card__media">
+            <img src="./img/DataScience-converted.webp" alt="Data Science Workshop" loading="lazy">
+            <span class="card__tag">Workshops</span>
+            <div class="card__date"><strong>29</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Data Science Workshop</h3>
+            <p>Analyze, visualize and create impact.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="arts">
+          <div class="card__media">
+            <img src="./img/GraphicDesign-converted.webp" alt="Graphic Design Workshop" loading="lazy">
+            <span class="card__tag">Arts &amp; Creativity</span>
+            <div class="card__date"><strong>31</strong><span>Jan</span></div>
+          </div>
+          <div class="card__body">
+            <h3>Graphic Design Workshop</h3>
+            <p>Turn your ideas into designs.</p>
+            <a href="#" class="card__link">View Activities <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty" id="emptyState" hidden>No activities found. Try another search or filter.</p>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (same as home) ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo light">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Student<strong>Hive</strong></span>
+        </a>
+        <p class="tagline">Your gateway to a vibrant campus life.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="index.html#clubs">Clubs</a></li>
+          <li><a href="index.html#register">Register</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Event Calendar</a></li>
+          <li><a href="#">Club Directory</a></li>
+          <li><a href="#">Help &amp; Support</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> <span>XYZ University,<br>Chennai, India</span></li>
+          <li><i class="fa-regular fa-envelope"></i> <span>studenthive@university.edu</span></li>
+          <li><i class="fa-solid fa-phone"></i> <span>+91 98765 43210</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 StudentHive. All rights reserved.</p>
+        <div class="legal">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="activities.js"></script>
+</body>
+</html>

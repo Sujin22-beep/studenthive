@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHive | Discover Campus Events</title>
+    <meta name="description" content="Find campus events, join clubs and meet like-minded people with StudentHive." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <style>
+        .registerform {
+            border: 1px solid gray;
+            margin: 100px;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 20px;
+            width: 40%;
+            margin-left: 350px;
+            color: royalblue;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .registerform h3 {
+            text-align: center;
+            color: royalblue;
+            margin-bottom: 20px;
+        }
+
+        .cbox {
+            display: flex;
+            align-items: center;
+            font-weight: lighter;
+        }
+
+        .checkbox {
+            height: 20px;
+            width: 20px;
+            margin: 5px;
+            align-items: center;
+        }
+
+        .names,
+        .email,
+        .mobnum,
+        .event,
+        .age {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: royalblue;
+            color: #fdf8ef;
+            margin-bottom: 20px;
+        }
+
+        .btn:focus {
+            background-color: darkblue;
+        }
+
+        .btn:hover {
+            transform: scale(0.9);
+        }
+
+        .error {
+            color: red;
+            font-weight: lighter;
+            display: none;
+        }
+
+        .submission {
+            color: green;
+            display: none;
+        }
+
+        .male,
+        .female {
+            font-weight: lighter;
+            padding-left: 5px;
+        }
+
+        .dob {
+            width: 40%;
+            color: royalblue;
+            border: 1px solid gray;
+            border-radius: 10px;
+            height: 40px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .gender {
+            margin-left: 20px;
+        }
+
+        @media (max-width:600px) {
+            .registerform {
+                margin: 60px;
+                cursor: pointer;
+                padding: 20px;
+                width: 70%;
+                margin-left: 100px;
+            }
+        }
+    </style>
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Student<strong>Hive</strong></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="#events">Events</a>
+                <a href="#clubs">Clubs</a>
+                <a href="register.html">Register</a>
+                <a href="activties.html">Activities</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- register form -->
+
+    <div class="registerform">
+        <h3>Event Registration</h3>
+        <form id="form"><label>Full Name</label><br><br>
+            <input type="text" placeholder="Enter your Name" class="names" id="names"><br>
+            <span class="error" id="nameerror">*Name starts with capital letter</span><br><br>
+            <label>Gender</label><br><br>
+            <input type="radio" name="gender" value="Male" class="gender"><label class="male">Male </label>
+            <input type="radio" name="gender" value="Female" class="gender"><label class="female">Female</label><br>
+            <span class="error" id="gendererror">*Select the gender</span><br><br>
+            <label>Date of birth</label><br><br>
+            <input type="date" class="dob" id="dob"><br>
+            <span class="error" id="doberror">*Please select your date of birth</span><br><br>
+            <label>Age</label><br><br>
+            <input type="number" placeholder="Enter your age" id="age" class="age"><br>
+            <span class="error" id="ageerror">*Enter your age</span><br><br>
+            <label>Email</label><br><br>
+            <input type="text" placeholder="Enter your mail Id" class="email" id="Email"><br>
+            <span class="error" id="mailerror">*Enter valid mail ID</span><br><br>
+            <label>Mobile Number</label><br><br>
+            <input type="text" placeholder="Enter your 10 digit mobile number" class="mobnum" id="mobnum"><br>
+            <span class="error" id="moberror">*Numbers only allowed</span><br><br>
+            <label>Select Event</label><br><br>
+            <input type="text" placeholder="Choose an event" class="event" id="event"><br><br>
+            <div class="cbox"><input type="checkbox" class="checkbox" id="checkbox">I agree to the event rules</div><br>
+            <span class="error" id="errorbox">*Please read the accept the terms</span><br><br>
+            <button class="btn" id="btn">Register</button>
+            <span class="submission" id="submit">You have been registered successfully</span>
+        </form>
+    </div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo light">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Student<strong>Hive</strong></span>
+                </a>
+                <p class="tagline">Your gateway to a vibrant campus life.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#clubs">Clubs</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Event Calendar</a></li>
+                    <li><a href="#">Club Directory</a></li>
+                    <li><a href="#">Help &amp; Support</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> <span>XYZ University,<br>Chennai, India</span></li>
+                    <li><i class="fa-regular fa-envelope"></i> <span>studenthive@university.edu</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span>+91 98765 43210</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 StudentHive. All rights reserved.</p>
+                <div class="legal">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let names = document.getElementById("names")
+        let gender = document.querySelectorAll('input[name="gender"]')
+        let gendererror = document.getElementById("gendererror")
+        let dob = document.getElementById("dob")
+        let doberror = document.getElementById("doberror")
+        let age = document.getElementById("age")
+        let ageerror = document.getElementById("ageerror")
+        let email = document.getElementById("Email")
+        let mobnum = document.getElementById("mobnum")
+        let nameerror = document.getElementById("nameerror")
+        let mailerror = document.getElementById("mailerror")
+        let moberror = document.getElementById("moberror")
+        let checkbox = document.getElementById("checkbox")
+        let errorbox = document.getElementById("errorbox")
+        let btn = document.getElementById("btn")
+        let form = document.getElementById("form")
+        let submit = document.getElementById("submit")
+        let valid = true
+
+        btn.addEventListener("click", function () {
+            event.preventDefault()
+
+            let nameregex = /^[A-Z][a-z]+$/
+            let emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/
+            let mobnumregex = /^[0-9]{10}$/
+            if (nameregex.test(names.value) == false) {
+                nameerror.style.display = "block"
+                valid = false
+            }
+            else {
+                nameerror.style.display = "none"
+                valid = true
+            }
+            let genderselected = false
+            for (let count = 0; count < gender.length; count = count + 1) {
+
+                if (gender[count].checked) {
+                    genderselected = true
+                }
+            }
+            if (!genderselected) {
+                gendererror.style.display = "block"
+                valid = false
+            }
+            else {
+                gendererror.style.display = "none"
+                valid = true
+            }
+            if (dob.value === "") {
+                doberror.style.display = "block"
+                valid = "false"
+            }
+            else {
+                doberror.style.display = "none"
+                valid = "true"
+            }
+            if (age.value === "") {
+                ageerror.style.display = "block"
+                valid = "false"
+            }
+            else {
+                ageerror.style.display = "none"
+                valid = "true"
+            }
+
+            if (emailregex.test(email.value) == false) {
+                mailerror.style.display = "block"
+                valid = false
+            }
+            else {
+                mailerror.style.display = "none"
+                valid = true
+            }
+
+            if (mobnumregex.test(mobnum.value) == false) {
+                moberror.style.display = "block"
+                valid = false
+            }
+            else {
+                moberror.style.display = "none"
+                valid = true
+            }
+            if (!checkbox.checked) {
+                errorbox.style.display = "block"
+                valid = false
+            }
+            else {
+                errorbox.style.display = "none"
+                valid = true
+            }
+            if (valid) {
+                submit.style.display = "block"
+                form.reset()
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>
